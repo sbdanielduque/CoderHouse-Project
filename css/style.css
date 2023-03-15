@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    max-height: 100%;
+}
+
+body{
+    background-color: black;
+}
+
+/* header */
+header {
+    background-color: #c69649;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px white;
+}
+
+.navBar{
+    display: flex;
+    justify-content: flex-end;
+    padding: 35px;
+    text-align: end;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+ul li{
+    margin-left: 50px;
+    padding: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-shadow: 1.5px 1px 3px black;
+    color: #282A3A;
+}
+
+.logo {
+    height: 100px;
+    padding: 7px;
+}
+
+/* main index*/
+h1{
+    color: white;
+    display: flex;
+    padding: 25px;
+    text-shadow: 2px 3px 5px #c69649;
+
+}
+
+.tipography {
+    margin-top: 100px;
+    margin-left: 50px;
+    height: 20rem;
+}
+
+/* main Galery */
+.mainGalery{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.container{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+
+}
+
+.container img{
+    margin: 10px;
+    border: solid 1px #282A3A;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px #c69649;
+}
+
+.mainGalery h2 {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    border: solid 1px #282A3A;
+    box-shadow: 1px 1px 10px #c69649;
+    border-radius: 10px;
+}
+
+/* main experience */
+
+.mainExp{
+    color: white;
+}
+
+.mainExp p{
+    margin: 100px;
+    font-size: 400;
+    max-width: 50%;
+}
+
+.block1 {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.block1 img{
+    width: 40rem;
+    border: solid 1px #282A3A;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px #c69649;
+}
+
+.block2 {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 50px;
+}
+
+.block2 img{
+    width: 40rem;
+    border: solid 1px #282A3A;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px #c69649;
+}
+
+/* main about me */
+.mainAbout{
+    color: white;
+}
+
+.MainContent{
+    display: flex;
+    justify-content: center;
+}
+
+.MainContent p {
+    width: 50%;
+    margin-top: 7rem;
+    margin-left: 20px;
+}
+.MainContent img {
+    width: 40rem;
+    margin: -50px 25px 25px 25px;
+    border: solid 1px #282A3A;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px #c69649;
+}
+
+/* footer */
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.socialMedia {
+    background-color: #C69749;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.socialMedia a {
+    text-decoration: none;
+}
+.socialMedia a img{
+    height: 5rem;
+    margin: 5px;
+}
+
+.copyRight{
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    padding: 5px;
+}
+
+/* contact form */
+
+.formContainer {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+form div label {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+form div input {
+width: 14.5rem;
+background-color: black;
+margin-left: 150px;
+}
+
+.contactButton{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+form div button{
+    background-color: #c69649;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 800;
+    box-shadow: 0px 0px 7px white;
+}
+
+button:hover{
+    transform: ease 5s;
+    background-color: #dd9a2ea3;
+}
+
+form div textarea{
+    width: 500px;
+    background-color: #c69649;
+    border-radius: 5px;
+    border: solid 1px white;
+    box-shadow: 1px 1px 5px white;
+}
