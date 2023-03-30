@@ -7,8 +7,28 @@
     max-height: 100%;
 }
 
+
 body{
     background-color: black;
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer" ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 120px auto 100px;
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
 }
 
 /* header */
@@ -18,7 +38,12 @@ header {
     justify-content: space-between;
     border-bottom: solid 1px white;
 }
-
+header label{
+    display: none;
+}
+header .inputMenu{
+    display: none;
+}
 .navBar{
     display: flex;
     justify-content: flex-end;
@@ -50,21 +75,36 @@ ul li a {
 }
 
 /* main index*/
+
+.mainIndex{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 70px
+}
+
+.tipography {
+    margin-top: 75px;
+    height: 20rem; 
+}
+
+.mainIndPic{
+    height: 25rem;
+    margin: 10px;
+    border: solid 1px #282A3A;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px #c69649;
+}
+
+
+/* main Galery */
 h1{
     color: white;
     display: flex;
     padding: 25px;
     text-shadow: 2px 3px 5px #c69649;
-
 }
 
-.tipography {
-    margin-top: 100px;
-    margin-left: 50px;
-    height: 20rem;
-}
-
-/* main Galery */
 .mainGalery{
     display: flex;
     flex-direction: column;
@@ -96,7 +136,6 @@ h1{
     box-shadow: 1px 1px 10px #c69649;
     border-radius: 10px;
 }
-
 /* main experience */
 
 .mainExp{
@@ -135,22 +174,24 @@ h1{
     box-shadow: 0px 0px 5px #c69649;
 }
 
+
+
 /* main about me */
 .mainAbout{
     color: white;
 }
 
-.MainContent{
+.mainContent{
     display: flex;
     justify-content: center;
 }
 
-.MainContent p {
+.mainContent p {
     width: 50%;
     margin-top: 7rem;
     margin-left: 20px;
 }
-.MainContent img {
+.mainContent img {
     width: 40rem;
     margin: -50px 25px 25px 25px;
     border: solid 1px #282A3A;
@@ -164,6 +205,8 @@ footer{
     flex-direction: column;
 }
 
+
+
 .socialMedia {
     background-color: #C69749;
     display: flex;
@@ -174,9 +217,12 @@ footer{
 .socialMedia a {
     text-decoration: none;
 }
-.socialMedia a img{
+.socialMedia a i{
     height: 5rem;
     margin: 5px;
+    font-size: 80px;
+    color: black;
+    
 }
 
 .copyRight{
@@ -233,4 +279,112 @@ form div textarea{
     border-radius: 5px;
     border: solid 1px white;
     box-shadow: 1px 1px 5px white;
+}
+
+@media screen and (max-width: 576px) {
+    /* header */
+    .navBar {
+        background: #805f2c82;
+        z-index: 1;
+        border: solid 1px white;
+        border-radius: 5px;
+        position: absolute;
+        top: 120px;
+        padding: 35px 30px;
+        transform: translateY(-500px);
+        transition: 1s;
+        right: 0;
+    }
+    .labelNav{
+        display: flex;
+        align-items: center;
+    }
+    .fa-bars{
+        font-size: 45px;
+        text-shadow: 0px 0px 5px white;
+        margin-right: 25px;
+    }
+    .inputMenu{
+        display: none;
+    }
+    .inputMenu:checked + .navBar {
+    transform: translateX(0);
+    }
+    .navBar ul{
+        flex-direction: column;
+        text-align: start;
+    }
+    .navBar ul li a{
+        color: white;
+    }
+/* mainIndex */
+    .mainIndex{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .tipography{
+        margin: 0;
+    }
+    .mainIndex .tipography img{
+        height: 9.5rem;
+        padding-top: 100px;
+    }
+    .mainIndPic{
+        height: 20rem;
+    }
+    /* about me */
+    .mainContent{
+        flex-wrap: wrap;
+        padding: 25px;
+    }
+    .mainContent p{
+        margin: 1rem;
+        margin-bottom: 5rem;
+        width: 100%;
+
+    }
+
+    .mainContent img{
+        width: 20rem;
+    }
+    /* experience */
+    .block1{
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+    }
+    .block2{
+        flex-direction: column;
+        padding: 0;
+        margin-bottom: 25px;
+        align-items: center;     
+    }
+    .mainExp{
+        justify-content: space-between;
+    }
+    .mainExp p{
+        margin: 25px
+    }
+    .mainExp img{
+        margin-left: 25px;
+        width: 20rem;
+        overflow: auto;
+    }
+    /* Galery */
+    .container img{
+        width: 100%;
+    }
+
+    /* Contact Me */
+    .inputCenter textarea{
+        width: 100%;
+    }
+    .formInput{
+        margin: 0;
+        color: white;
+    }
+    .formContainer{
+        margin-bottom: 35px;
+    }
 }
