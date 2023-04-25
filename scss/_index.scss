@@ -1,0 +1,23 @@
+.mainIndex{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    .row{
+        display: flex;
+        justify-content: space-around;
+        .tipography{
+        margin-top: 75px;
+        height: 15rem;
+        }
+        .mainIndPic{
+            display: flex;
+            justify-content: end;
+        height: 25rem;
+        .borderImg{
+            border: solid 1px #282A3A;
+            border-radius: 3px;
+            box-shadow: 0px 0px 5px #c69649;
+            }
+        } 
+    }
+    
+}

@@ -1,0 +1,19 @@
+.mainExp{
+    @include marginMain;
+    color: $text-color;
+    .block1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p{
+            text-align: justify;
+        }
+        img{
+            @include borderImg
+        }
+    }
+    .block2{
+        @extend .block1;
+        margin-top: 50px;
+    }
+}

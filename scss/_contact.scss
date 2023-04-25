@@ -1,0 +1,36 @@
+.mainContact{
+    @include marginMain;
+    .formContact{
+        font-size: 800;
+        color: $text-color;
+        text-align: center;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        .contactButton{
+            padding: 7px 25px;
+            color: $text-color;
+            border-radius: 5px;
+            background-color: $color-primary;
+            &:hover{
+                transition: background-color 0.3s ease;
+                background-color: $color-primary-opacity;
+            }
+        }
+        label{
+            width: 100%;
+        }
+        input{
+            background-color: $bg-color;
+            color: $text-color;
+            padding: 10px;
+            width: 50%;
+        }
+        input::placeholder{
+            color: $color-primary-opacity;
+        }
+        textarea{
+            @extend input
+        }
+    }
+}

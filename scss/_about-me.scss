@@ -1,0 +1,16 @@
+.mainAbout{
+    @include marginMain;
+    .pCont{
+        margin-top: 50px;
+        p{
+        color: $text-color;
+        margin-top: 20px;
+        font-size: 17px;
+        text-align: justify;
+    }  
+    }
+    img{
+        width: 40rem;
+        @include borderImg;
+    }
+}

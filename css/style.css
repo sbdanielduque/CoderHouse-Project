@@ -1,454 +1,249 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Playfair Display', serif;
-    max-height: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display", serif;
+  max-height: 100%;
 }
 
-
-.bodyGrid{
-    background-color: black;
-    display: grid;
-    grid-template-areas:
-    "header header header"
-    "main main main"
-    "footer footer footer" ;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 120px auto 100px;
+body {
+  background-color: black;
 }
 
-header{
-    grid-area: header;
+h1 {
+  color: white;
+  display: flex;
+  padding: 25px;
+  text-shadow: 2px 3px 5px #c69649;
 }
 
-main{
-    grid-area: main;
+.mainIndex {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.mainIndex .row {
+  display: flex;
+  justify-content: space-around;
+}
+.mainIndex .row .tipography {
+  margin-top: 75px;
+  height: 15rem;
+}
+.mainIndex .row .mainIndPic {
+  display: flex;
+  justify-content: end;
+  height: 25rem;
+}
+.mainIndex .row .mainIndPic .borderImg {
+  border: solid 1px #282A3A;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px #c69649;
+}
+
+.mainAbout {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.mainAbout .pCont {
+  margin-top: 50px;
+}
+.mainAbout .pCont p {
+  color: white;
+  margin-top: 20px;
+  font-size: 17px;
+  text-align: justify;
+}
+.mainAbout img {
+  width: 40rem;
+  border: solid 1px #282A3A;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px #c69649;
+}
+
+.mainExp {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: white;
+}
+.mainExp .block1, .mainExp .block2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainExp .block1 p, .mainExp .block2 p {
+  text-align: justify;
+}
+.mainExp .block1 img, .mainExp .block2 img {
+  border: solid 1px #282A3A;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px #c69649;
+}
+.mainExp .block2 {
+  margin-top: 50px;
+}
+
+.mainGalery {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.mainGalery h2 {
+  padding: 5px;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+.mainGalery .containerGalery {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  height: 25rem;
+}
+.mainGalery .containerGalery img {
+  border: solid 1px #282A3A;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px #c69649;
+}
+.mainGalery .containerGalery img:hover {
+  transition: transform ease 1s;
+  transform: scale(1.7);
+}
+.mainGalery .cont1 {
+  margin-left: -7px;
+}
+
+.mainContact {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.mainContact .formContact {
+  font-size: 800;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.mainContact .formContact .contactButton {
+  padding: 7px 25px;
+  color: white;
+  border-radius: 5px;
+  background-color: #C69749;
+}
+.mainContact .formContact .contactButton:hover {
+  transition: background-color 0.3s ease;
+  background-color: #735F32;
+}
+.mainContact .formContact label {
+  width: 100%;
+}
+.mainContact .formContact input, .mainContact .formContact textarea {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  width: 50%;
+}
+.mainContact .formContact input::placeholder, .mainContact .formContact textarea::placeholder {
+  color: #735F32;
+}
+.navbar {
+  background-color: #C69749;
+  border-bottom: solid 1px white;
+}
+.navbar .container-fluid .logo {
+  height: 100px;
+  padding: 7px;
+}
+.navbar .container-fluid .collapse {
+  justify-content: end;
+}
+.navbar .container-fluid .collapse .navbar-nav .nav-item {
+  margin-right: 5rem;
+}
+.navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-shadow: 1.5px 1px 3px black;
+  color: #282A3A;
 }
 
 footer {
-    grid-area: footer;
+  background-color: #C69749;
+  border-top: solid 1px white;
 }
-
-/* header */
-.bodyGrid header{
-    background-color: #c69649;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: solid 1px white;
+footer .socialMedia {
+  display: flex;
+  justify-content: space-around;
 }
-header label{
-    display: none;
+footer .socialMedia a {
+  text-decoration: none;
 }
-header .inputMenu{
-    display: none;
+footer .socialMedia a i {
+  height: 5rem;
+  margin: 5px;
+  font-size: 80px;
+  color: black;
 }
-.navBar{
-    display: flex;
-    justify-content: flex-end;
-    padding: 35px;
-    text-align: end;
+footer .copyRight {
+  background-color: black;
 }
-
-ul{
-    display: flex;
-    list-style: none;
+footer .copyRight div {
+  height: 5px;
 }
-
-ul li{
-    margin-left: 50px;
-    padding: 10px;
-}
-
-ul li a {
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-shadow: 1.5px 1px 3px black;
-    color: #282A3A;
-}
-
-.logo {
-    height: 100px;
-    padding: 7px;
-}
-
-/* main index*/
-
-.mainIndex{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 20px;
-    margin-bottom: 70px
-}
-
-.tipography {
-    margin-top: 75px;
-    height: 20rem; 
-}
-
-.mainIndPic{
-    height: 25rem;
-    margin: 10px;
-    border: solid 1px #282A3A;
-    border-radius: 3px;
-    box-shadow: 0px 0px 5px #c69649;
-}
-
-
-/* main Galery */
-h1{
-    color: white;
-    display: flex;
-    padding: 25px;
-    text-shadow: 2px 3px 5px #c69649;
-}
-
-.mainGalery{
-    display: flex;
-    flex-direction: column;
-    color: white;
-}
-
-.containerGalery{
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px;
-
-}
-
-.containerGalery img{
-    margin: 10px;
-    border: solid 1px #282A3A;
-    border-radius: 3px;
-    box-shadow: 0px 0px 5px #c69649;
-}
-
-.mainGalery h2 {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    margin: 10px;
-    border: solid 1px #282A3A;
-    box-shadow: 1px 1px 10px #c69649;
-    border-radius: 10px;
-}
-
-.btn{
-    background-color: #805f2c82;
-    width: 4.2rem;
-    height: 4.2rem;
-    font-size: 50px;
-    border-radius: 50%;
-    position: fixed;
-    right: 25px;
-    bottom: 25px;
-    display: flex;
-    justify-content: center;
-    color:#c69649
-}
-.btn:hover{
-    color: white
-}
-/* main experience */
-
-.mainExp{
-    color: white;
-}
-
-.mainExp p{
-    margin-top: 100px;
-    margin-right: 100px;
-    font-size: 400;
-    max-width: 50%;
-    text-align: justify;
-}
-
-.block1 {
-    display: flex;
-    padding: 50px;
-}
-
-.block1 img{
-    width: 40rem;
-    border: solid 1px #282A3A;
-    border-radius: 3px;
-    box-shadow: 0px 0px 5px #c69649;
-}
-
-.block2 {
-    display: flex;
-    flex-direction: row-reverse;
-    padding: 50px;
-}
-
-.block2 img{
-    width: 40rem;
-    border: solid 1px #282A3A;
-    border-radius: 3px;
-    box-shadow: 0px 0px 5px #c69649;
-    margin-right: 100px;
-}
-
-.block2 p{
-    margin-right: 0;
-}
-
-
-
-/* main about me */
-.mainAbout{
-    color: white;
-}
-
-.mainContent{
-    display: flex;
-    justify-content: center;
-}
-
-.mainContent p {
-    width: 50%;
-    margin-top: 7rem;
-    margin-left: 20px;
-}
-.mainContent img {
-    width: 40rem;
-    margin: -50px 25px 25px 25px;
-    border: solid 1px #282A3A;
-    border-radius: 3px;
-    box-shadow: 0px 0px 5px #c69649;
-}
-
-/* footer */
-.footerGrid{
-    display: flex;
-    flex-direction: column;
-}
-
-.socialMedia {
-    background-color: #C69749;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.socialMedia a {
-    text-decoration: none;
-}
-.socialMedia a i{
-    height: 5rem;
-    margin: 5px;
-    font-size: 80px;
-    color: black;
-    
-}
-
-.copyRight{
-    color: white;
-    text-align: center;
-    font-size: 10px;
-    padding: 5px;
-}
-
-/* contact form */
-
-.formContainer {
-    color: white;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-form div label {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-}
-
-form div input {
-width: 14.5rem;
-background-color: black;
-margin-left: 150px;
-}
-
-.contactButton{
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-
-form div button{
-    background-color: #c69649;
-    padding: 5px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: 800;
-    box-shadow: 0px 0px 7px white;
-}
-
-button:hover{
-    transform: ease 5s;
-    background-color: #dd9a2ea3;
-}
-
-form div textarea{
-    width: 500px;
-    background-color: #c69649;
-    border-radius: 5px;
-    border: solid 1px white;
-    box-shadow: 1px 1px 5px white;
+footer .copyRight div p {
+  text-align: center;
+  color: white;
+  padding: 5px;
+  font-size: 10px;
 }
 
 @media screen and (max-width: 576px) {
-    /* header */
-    .navBar {
-        background: #805f2c82;
-        z-index: 1;
-        border: solid 1px white;
-        border-radius: 5px;
-        position: absolute;
-        top: 120px;
-        padding: 35px 30px;
-        transform: translateY(-500px);
-        transition: 1s;
-        right: 0;
-    }
-    .labelNav{
-        display: flex;
-        align-items: center;
-    }
-    .fa-bars{
-        font-size: 45px;
-        text-shadow: 0px 0px 5px white;
-        margin-right: 25px;
-    }
-    .inputMenu{
-        display: none;
-    }
-    .inputMenu:checked + .navBar {
-    transform: translateX(0);
-    }
-    .navBar ul{
-        flex-direction: column;
-        text-align: start;
-    }
-    .navBar ul li a{
-        color: white;
-    }
-/* mainIndex */
-    .mainIndex{
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-    .tipography{
-        margin: 0;
-    }
-    .mainIndex .tipography img{
-        height: 9.5rem;
-        padding-top: 100px;
-    }
-    .mainIndPic{
-        height: 20rem;
-    }
-    /* about me */
-    .mainContent{
-        flex-wrap: wrap;
-        padding: 25px;
-    }
-    .mainContent p{
-        margin: 1rem;
-        margin-bottom: 5rem;
-        width: 100%;
-
-    }
-
-    .mainContent img{
-        width: 20rem;
-    }
-    /* experience */
-    .block1{
-        flex-direction: column;
-        padding: 0;
-        align-items: center;
-    }
-    .block2{
-        flex-direction: column;
-        padding: 0;
-        margin-bottom: 25px;
-        align-items: center;     
-    }
-    .mainExp{
-        justify-content: space-between;
-    }
-    .mainExp p{
-        margin: 25px
-    }
-    .mainExp img{
-        width: 20rem;
-        overflow: auto;
-    }
-    .block2 img{
-        margin-left: 100px;
-    }
-    /* Galery */
-    
-    .containerGalery img{
-        width: 100%;
-    }
-    .mainGalery h2{
-        width: 95%;
-    }
-    .containerGalery{
-        margin: 0;
-    }
-    .btn{
-        width: 2rem;
-        height: 2rem;
-        font-size: 15px;
-    }
-}
-    /* Contact Me */
-    .inputCenter textarea{
-        width: 100%;
-    }
-    .formInput{
-        margin: 0;
-        color: white;
-    }
-    .formContainer{
-        margin-bottom: 35px;
-    }
-/* Bootstrap */
-/* header */
-header.container-fluid{
-    background-color: #c69649;
-    border-bottom: solid 1px white;
-}
-/* main Exp */
-header.container-fluid .logo{
-    height: 120px;
-}
-header.container-fluid .logo img{
-    padding: 0px;
-    margin-top: 5px;
+  .mainIndex {
+    margin-top: 10px;
+  }
+  .mainIndex .row .tipography img {
+    height: 9rem;
+    margin-left: 15px;
+  }
+  .mainIndex .row .mainIndPic {
+    height: 20rem;
+    justify-content: center;
+  }
+  .mainAbout .pCont {
+    margin-top: 0;
+  }
+  .mainAbout .pCont p {
+    font-size: 20px;
+    padding: 10px;
+  }
+  .mainAbout .row .imgCont {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  .mainAbout .row .imgCont img {
+    width: 20rem;
+  }
+  .mainExp .block1, .mainExp .block2 {
+    flex-direction: column;
+  }
+  .mainExp .block1 p, .mainExp .block2 p {
+    font-size: 20px;
+    padding: 10px;
+  }
+  .mainExp .block1 img, .mainExp .block2 img {
+    width: 20rem;
+  }
+  .mainExp .block2 {
+    flex-direction: column-reverse;
+  }
+  .mainGalery .containerGalery {
+    flex-direction: column-reverse;
+    margin: 0;
+  }
+  .mainGalery .containerGalery img:hover {
+    transition: none;
+    transform: none;
+  }
 }
 
-header.container-fluid i{
-    margin-top: 30px;
-}
-/* footer */
-footer.container-fluid{
-    background-color:#C69749;
-}
-
-p.copyRight{
-    margin-bottom: 0;
-}
-
-/* menu Responsive */
-.col-3{
-    margin-top: 20px;
-}
+/*# sourceMappingURL=style.css.map */

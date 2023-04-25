@@ -1,0 +1,24 @@
+.navbar{
+    background-color: $color-primary;
+    border-bottom: solid 1px white;
+    .container-fluid{
+        .logo {
+        height: 100px;
+        padding: 7px;
+        }
+        .collapse{
+            justify-content: end;
+            .navbar-nav{
+                .nav-item{
+                    margin-right: 5rem;
+                    .nav-link{
+                        font-size: 1.5rem;
+    font-weight: 700;
+    text-shadow: 1.5px 1px 3px black;
+    color: #282A3A;
+                    }
+                }
+            }
+        }
+    }  
+}

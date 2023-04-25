@@ -1,0 +1,29 @@
+footer{
+    background-color: $color-primary;
+    border-top: solid 1px white;
+    .socialMedia{
+        display: flex;
+        justify-content: space-around;
+        a{
+            text-decoration: none;
+            i{
+                height: 5rem;
+                margin: 5px;
+                font-size: 80px;
+                color: black;
+            }
+        }
+    }
+    .copyRight{
+        background-color: $bg-color;
+        div{
+            height: 5px;
+            p{
+            text-align: center;
+            color: $text-color;
+            padding: 5px;
+            font-size: 10px;
+        }
+        }
+    }
+}
