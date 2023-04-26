@@ -110,6 +110,16 @@ h1 {
 .mainGalery .cont1 {
   margin-left: -7px;
 }
+.mainGalery .btn {
+  position: fixed;
+  bottom: 150px;
+  right: 25px;
+  border-radius: 50px;
+  color: black;
+  border: solid 1px white;
+  font-size: 15px;
+  background-color: #C69749;
+}
 
 .mainContact {
   margin-top: 40px;
@@ -241,12 +251,24 @@ footer .copyRight div p {
   }
   /* Galery */
   .mainGalery .containerGalery {
-    flex-direction: column-reverse;
+    height: 100%;
+    flex-direction: column;
     margin: 0;
+  }
+  .mainGalery .containerGalery img {
+    height: 25rem;
+    margin-top: 15px;
   }
   .mainGalery .containerGalery img:hover {
     transition: none;
     transform: none;
+  }
+  .mainGalery h2 {
+    margin-top: 100px;
+    margin-bottom: 25px;
+  }
+  .mainGalery .btn {
+    bottom: 125px;
   }
   /* Contact */
   .mainContact .formContact {
