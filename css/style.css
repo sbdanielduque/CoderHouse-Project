@@ -197,6 +197,7 @@ footer .copyRight div p {
 }
 
 @media screen and (max-width: 576px) {
+  /* index */
   .mainIndex {
     margin-top: 10px;
   }
@@ -208,6 +209,7 @@ footer .copyRight div p {
     height: 20rem;
     justify-content: center;
   }
+  /* About */
   .mainAbout .pCont {
     margin-top: 0;
   }
@@ -223,6 +225,7 @@ footer .copyRight div p {
   .mainAbout .row .imgCont img {
     width: 20rem;
   }
+  /* Experience */
   .mainExp .block1, .mainExp .block2 {
     flex-direction: column;
   }
@@ -236,6 +239,7 @@ footer .copyRight div p {
   .mainExp .block2 {
     flex-direction: column-reverse;
   }
+  /* Galery */
   .mainGalery .containerGalery {
     flex-direction: column-reverse;
     margin: 0;
@@ -243,6 +247,14 @@ footer .copyRight div p {
   .mainGalery .containerGalery img:hover {
     transition: none;
     transform: none;
+  }
+  /* Contact */
+  .mainContact .formContact {
+    margin-top: 50px;
+  }
+  .mainContact .formContact input, .mainContact .formContact textarea {
+    width: 100%;
+    margin-bottom: 25px;
   }
 }
 
