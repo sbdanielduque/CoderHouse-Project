@@ -10,7 +10,11 @@
     }  
     }
     img{
-        width: 40rem;
+        width: 38rem;
         @include borderImg;
+    }
+    .spaces{
+        margin-top: 5rem;
+        margin-bottom: 10rem;
     }
 }

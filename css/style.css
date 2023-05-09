@@ -17,8 +17,12 @@ h1 {
 }
 
 .mainIndex {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.mainIndex .mainContent {
   margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
 }
 .mainIndex .row {
   display: flex;
@@ -53,10 +57,14 @@ h1 {
   text-align: justify;
 }
 .mainAbout img {
-  width: 40rem;
+  width: 38rem;
   border: solid 1px #282A3A;
   border-radius: 3px;
   box-shadow: 0px 0px 5px #c69649;
+}
+.mainAbout .spaces {
+  margin-top: 5rem;
+  margin-bottom: 10rem;
 }
 
 .mainExp {
@@ -129,9 +137,12 @@ h1 {
   font-size: 800;
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 50px;
   display: flex;
   flex-direction: column;
+}
+.mainContact .formContact .mb-3 {
+  padding: 20px;
 }
 .mainContact .formContact .contactButton {
   padding: 7px 25px;
@@ -150,7 +161,7 @@ h1 {
   background-color: black;
   color: white;
   padding: 10px;
-  width: 50%;
+  width: 75%;
 }
 .mainContact .formContact input::placeholder, .mainContact .formContact textarea::placeholder {
   color: #735F32;
@@ -172,7 +183,7 @@ h1 {
 .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
   font-size: 1.5rem;
   font-weight: 700;
-  text-shadow: 1.5px 1px 3px black;
+  text-shadow: 1.5px 1px 3px rgb(153, 153, 153);
   color: #282A3A;
 }
 
@@ -197,7 +208,7 @@ footer .copyRight {
   background-color: black;
 }
 footer .copyRight div {
-  height: 5px;
+  height: 0;
 }
 footer .copyRight div p {
   text-align: center;
@@ -210,6 +221,9 @@ footer .copyRight div p {
   /* index */
   .mainIndex {
     margin-top: 10px;
+  }
+  .mainIndex .row .tipography {
+    text-align: center;
   }
   .mainIndex .row .tipography img {
     height: 9rem;

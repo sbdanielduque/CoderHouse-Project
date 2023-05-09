@@ -1,6 +1,9 @@
 .mainIndex{
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    @include marginMain;
+    .mainContent{
+        margin-top: 5rem;
+        margin-bottom: 10rem;
+    }
     .row{
         display: flex;
         justify-content: space-around;

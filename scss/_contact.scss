@@ -4,9 +4,12 @@
         font-size: 800;
         color: $text-color;
         text-align: center;
-        padding: 10px;
+        padding: 50px;
         display: flex;
         flex-direction: column;
+        .mb-3{
+            padding: 20px;
+        }
         .contactButton{
             padding: 7px 25px;
             color: $text-color;
@@ -24,7 +27,7 @@
             background-color: $bg-color;
             color: $text-color;
             padding: 10px;
-            width: 50%;
+            width: 75%;
         }
         input::placeholder{
             color: $color-primary-opacity;
